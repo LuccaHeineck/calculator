@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form class="color-picker">
+        <fieldset>
+            <legend class="visually-hidden">Pick a color scheme</legend>
+            <label for="theme" class="visually-hidden">Light</label>
+            <input type="radio" name="theme" id="light" checked>
+
+            <label for="theme" class="visually-hidden">Dark</label>
+            <input type="radio" name="theme" id="dark">
+
+            <label for="theme" class="visually-hidden">Purple</label>
+            <input type="radio" name="theme" id="purple">
+
+            <label for="theme" class="visually-hidden">Blue</label>
+            <input type="radio" name="theme" id="blue">
+
+            <label for="theme" class="visually-hidden">Green</label>
+            <input type="radio" name="theme" id="green">
+        </fieldset>
+    </form>
+
+    <div class="container">
+
+        <input type="text" class="display">
+        
+        <div class="buttons">
+            <button class="number" data-value = "7">7</button>
+            <button class="number" data-value = "8">8</button>
+            <button class="number" data-value = "9">9</button>
+            <button class="keydel" data-value = "DEL">DEL</button>
+
+            <button class="number" data-value = "4">4</button>
+            <button class="number" data-value = "5">5</button>
+            <button class="number" data-value = "6">6</button>
+            <button class="operator" data-value = "+">+</button>
+
+            <button class="number" data-value = "1">1</button>
+            <button class="number" data-value = "2">2</button>
+            <button class="number" data-value = "3">3</button>
+            <button class="operator" data-value = "-">-</button>
+
+            <button class="number" data-value = ".">.</button>
+            <button class="number" data-value = "0">0</button>
+            <!-- <button data-value = "÷">÷</button> -->
+            <button class="operator" data-value = "/">/</button>
+            <button class="operator" data-value = "*">x</button>
+
+            <button class="keyc" data-value = "C">C</button>
+            <button class="key-equals" data-value = "=">=</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
